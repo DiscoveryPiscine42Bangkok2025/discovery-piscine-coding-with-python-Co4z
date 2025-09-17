@@ -1,5 +1,5 @@
-arr = [2, 8, 9, 48, 8, 22, -12, 2]
-filtered = [x for x in arr if x > 5]
-print(arr)
-print([x + 2 for x in filtered])
+x = [2, 8, 9, 48, 8, 22, -12, 2]
 
+result = list(dict.fromkeys([n + 2 for n in x if n > 5]))
+
+print(result)
